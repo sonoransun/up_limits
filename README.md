@@ -9,12 +9,13 @@ This cookbook is another good example for learning chef basics. As an
 
 ### Default Recipe
 
-The default recipe sets both the hard and soft open file limit:
+The default recipe sets both the hard and soft open file limit as per
+ `/etc/security/limits.conf`:
 
     *               soft    nofile           262140
     *               hard    nofile           262140
 
-Which applies once a session is started. You may need to restart services
+This change applies once a session is started. You may need to restart services
  for this change to apply.
 
 ### Usage
